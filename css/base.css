@@ -1,0 +1,15 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "微软雅黑","宋体","trebuchet ms";
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: #fff;
+}
+img{
+	border: none;
+}

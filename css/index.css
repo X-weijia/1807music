@@ -1,0 +1,353 @@
+@import "base.css";
+header{
+    width: 1346px;
+    height: 750px;
+    background: url("../img/banner.jpg");
+    background-size: 1346px 750px;
+}
+.bg{
+    width: 1346px;
+    height: 750px;
+    background: rgba(70, 70, 70, 0.7);
+    overflow: hidden;
+}
+.logo{
+    width: 134px;
+    height: 120px;
+    margin-left: 160px;
+    margin-top: 29px;
+    float: left;
+}
+.logo img{
+    width: 134px;
+    height: 120px;
+}
+.nav{
+    width: 867px;
+    height: 30px;
+    float: left;
+    margin-top: 110px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_list{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+}
+.nav_list a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav_list:hover{
+    background-color: white;
+    transform: scale(1.5);
+}
+.nav_list:hover a{
+    color: #666;
+}
+.bg h3{
+    width: 1346px;
+    height: 60px;
+    text-align: center;
+    margin: 350px auto 0;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.bg h2{
+    width: 1346px;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 46px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.bg .about{
+    width: 152px;
+    height: 45px;
+    background: darkgray;
+    margin: 0 auto;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.bg a:hover .about{
+    background: #fff;
+    color: #666;
+    transform: scale(0.9);
+}
+/*info 开始*/
+.info{
+    width: 1346px;
+    height: 864px;
+    background: #ddd;
+}
+.info_box{
+    width: 720px;
+    height: 715px;
+    padding: 0 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.info_box>h2{
+    width: 710px;
+    height: 108px;
+    text-align: center;
+    line-height: 108px;
+    font-size: 68px;
+    font-weight: 400;
+    margin-top: 108px;
+    color: #333;
+}
+.info_box>.ch{
+    display: block;
+    width: 710px;
+    height: 130px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgb(128, 128, 128);
+    line-height: 25px;
+    padding-top: 40px;
+}
+.info_box>.en{
+    display: block;
+    width: 710px;
+    height: 232px;
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+    line-height: 25px;
+    padding-top: 40px;
+}
+.info_box audio{
+    width: 710px;
+    height: 60px;
+}
+/*课程开始*/
+.type{
+    width: 1346px;
+    height: 720px;
+    background: #2c2d2d;
+    padding-top: 123px;
+}
+.type h3{
+    display: block;
+    width: 1256px;
+    height: 100px;
+    font-size: 68px;
+    font-weight: 400;
+    font-family: "trebuchet ms";
+    margin: 0 auto;
+    text-align: center;
+    color: #eee;
+}
+.music_type{
+    width: 1190px;
+    height: 589px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.frame{
+    width: 350px;
+    height: 499px;
+}
+.type_list:hover .frame{
+
+}
+.type_list{
+    width: 340px;
+    height: 489px;
+    background: #888;
+    margin-top: 20px;
+    position: relative;
+    transition: all,16s,0.2s,linear;
+}
+.type_list .frame{
+    width: 370px;
+    height: 519px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    animation: scale 0.3s  linear forwards;
+    display: none;
+}
+.type_list:hover .frame{
+    display: block;
+    width: 370px;
+    height: 519px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    animation: scale 0.3s  linear forwards;
+}
+@keyframes scale {
+    from{
+        transform: scale(1.1);
+        border-color: rgba(255,255,255,0);
+    }
+    30%{
+        transform: scale(1.1);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
+.type_list img{
+    width: 340px;
+    height: 255px;
+}
+.type_list h4{
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+}
+.type_list p{
+    font-size: 12px;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding-left:10px;
+    padding-right:10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    line-height: 25px;
+    overflow: hidden;
+}
+.type_list:hover .about{
+    width: 220px;
+    height: 45px;
+    background: darkgray;
+    margin: 441px auto 0;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type_list a{
+    color: rgba(0,0,0,0);
+}
+.type_list:hover a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.type_list a:hover .about{
+    background: #fff;
+    color: #333;
+    transform: scale(0.9);
+}
+/*团队介绍开始*/
+.team{
+    width: 1346px;
+    height: 700px;
+    background: #ddd;
+    padding-top: 68px;
+}
+.team h3{
+    display: block;
+    width: 1256px;
+    height: 100px;
+    font-size: 68px;
+    font-family: "trebuchet ms";
+    font-weight: 400;
+    margin: 0 auto 10px;
+    text-align: center;
+    color: #333;
+}
+.music_team{
+    width: 1210px;
+    height: 560px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.team_list{
+    width: 363px;
+    height: 468px;
+    border: 2px solid rgb(128,128,128);
+    position: relative;
+    overflow: hidden;
+}
+.team_list:hover img{
+    transform: scale(1.1);
+}
+.team_list img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px auto;
+    transition: all 0.2s linear;
+}
+.team_list h4{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(128,128,128);
+    text-align: center;
+}
+.team_list p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(128,128,128);
+    padding: 0 10px;
+    margin-top: 14px;
+}
+.side{
+    width: 260px;
+    height: 468px;
+    background: rgba(181,181,181,0.7);
+    position: absolute;
+    top: 0;
+    left: -261px;
+    transition: all 0.6s linear;
+}
+.team_list:hover .side{
+    left: 0;
+}
+.side h4{
+    color: #222;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.side p{
+    width: 2px;
+    height: 320px;
+    color: #222;
+    font-size: 23px;
+    -webkit-writing-mode: vertical-lr;
+    margin: 40px 0 0 60px;
+}
+.team>p{
+    display: block;
+    width: 1256px;
+    height: 50px;
+    font-size: 35px;
+    letter-spacing: 6px;
+    font-family: "trebuchet ms";
+    font-weight: 400;
+    margin: -45px auto 0;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.38);
+}
