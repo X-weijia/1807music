@@ -55,98 +55,52 @@ header{
     font-weight: bold;
     color: #ffffff;
 }
-.leaving{
-    width: 710px;
-    height: 500px;
-    font-size: 20px;
-    border: 1px solid #eeeeee;
-    margin: 180px auto;
-    padding-top: 30px;
-    position: relative;
-}
-.leaving input{
-    width: 300px;
-    height: 40px;
-    margin-top: 30px;
-    background-color: rgba(230,230,230,0.9);
-    padding-left: 10px;
-    border: none;
-    outline:none;
-}
-.push{
-    width: 160px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 20px;
-    background: #eee;
-    margin-top: 20px;
-    margin-left: 275px;
-    font-weight: bold;
-    box-shadow: 0 0 10px 1px #fff;
-}
-a:hover .push{
-    background: #222;
-    color: #ffffff;
-}
-.out{
-   display:block;
-    width: 80px;
-    height: 30px;
-    font-size: 18px;
-    border-radius: 12px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    background:#999;
-    color:#000;
-    text-align: center;
-    line-height: 30px;
-}
-.out:hover{
-    background: #eee;
-    font-weight: bold;
-}
-
-
-/*联系开始*/
-.contact{
-    width: 1346px;
-    height: 964px;
-    background: url("../img/bg2.jpg") no-repeat;
-    background-size: 1346px 964px;
-}
-.bg3{
-    width: 100%;
-    height: 964px;
-    background: rgba(60,60,60,0.8);
+.sign{
+    width: 600px;
+    height: 450px;
+    margin: 260px auto;
     overflow: hidden;
 }
-.bg3 h3{
+.sign input{
     display: block;
-    width: 420px;
-    height: 100px;
-    font-size: 68px;
-    font-family: "trebuchet ms";
-    font-weight: 400;
-    margin: 100px auto 60px;
-    text-align: center;
+    width: 565px;
+    height: 40px;
+    font-size: 20px;
     color: #eee;
+    margin: 25px auto;
+    padding-left: 15px;
+    background-color: rgba(40,40,40,0);
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #eeeeee;
 }
-.call{
-    width: 820px;
-    height: 606px;
-    padding: 0 40px;
-    margin: 30px auto;
+.email textarea{
+    width: 565px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 15px;
+    background: rgba(180,180,180,0.8);
+    font-size: 20px;
+    color: #eee;
+    resize: none;
 }
-.call_type{
-    width: 810px;
-    height: 39px;
-    /*background: gray;*/
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
+.inline{
+    width: 120px;
+    height: 40px;
+    background-color: #dddddd;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: #666;
 }
+.inline:hover{
+    background: #999;
+    color: #fff;
+}
+
 /*底部开始*/
 footer{
     width: 1266px;
@@ -180,4 +134,15 @@ footer{
     justify-content: center;
     align-items: flex-start;
     padding-left: 60px;
+}
+/*留言*/
+.leaving{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgba(60,60,60,0.6);
+    line-height: 30px;
+    position: fixed;
+    left: 30px;
+    bottom: 0;
 }
