@@ -1,12 +1,12 @@
 @import "base.css";
 header{
-    width: 1346px;
+    width: 100%;
     height: 750px;
     background: url("../img/banner.jpg");
-    background-size: 1346px 750px;
+    background-size: 100% 750px;
 }
 .bg{
-    width: 1346px;
+    width: 100%;
     height: 750px;
     background: rgba(70, 70, 70, 0.7);
     overflow: hidden;
@@ -51,7 +51,7 @@ header{
     color: #666;
 }
 .bg h3{
-    width: 1346px;
+    width: 800px;
     height: 60px;
     text-align: center;
     margin: 350px auto 0;
@@ -60,7 +60,7 @@ header{
     color: white;
 }
 .bg h2{
-    width: 1346px;
+    width: 800px;
     height: 100px;
     text-align: center;
     letter-spacing: 5px;
@@ -68,29 +68,27 @@ header{
     margin: 0 auto;
     color: #ffffff;
 }
-.bg .about{
-    width: 152px;
-    height: 45px;
-    background: darkgray;
-    margin: 0 auto;
-    border-radius: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bg .look{
+    color: #eee;
 }
-.bg a{
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
+.bg .look:hover{
+    color: #888;
 }
-.bg a:hover .about{
-    background: #fff;
-    color: #666;
-    transform: scale(0.9);
+.bg .look:hover .enter{
+    border: 1px solid #888;
 }
-/*info 开始*/
+.bg .look:hover i{
+    color: #888;
+}
+.enter{
+    width: 138px;
+    height: 37px;
+    border: 1px solid #dddddd;
+    margin: 80px auto;
+}
+
 .info{
-    width: 1346px;
+    width: 100%;
     height: 864px;
     background: #ddd;
 }
@@ -136,7 +134,7 @@ header{
 }
 /*课程开始*/
 .type{
-    width: 1346px;
+    width: 100%;
     height: 720px;
     background: #2c2d2d;
     padding-top: 123px;
@@ -260,7 +258,7 @@ header{
 }
 /*团队介绍开始*/
 .team{
-    width: 1346px;
+    width: 100%;
     height: 700px;
     background: #ddd;
     padding-top: 68px;
@@ -351,126 +349,150 @@ header{
     text-align: center;
     color: rgba(51, 51, 51, 0.38);
 }
-/*问答开始*/
-.q_a{
-    width: 1346px;
-    height: 640px;
-    background: rgba(30,30,30,0.8);
+/*资讯开始*/
+.dynamic{
+    width: 100%;
+    height: 1028px;
+    background: rgba(30,30,30,0.4);
     padding-top: 56px;
 }
-.q_a .bg1{
-    width: 1346px;
-    height: 640px;
-    background: url("../img/bg1.jpg") no-repeat;
-    background-size: 1346px 735px;
+.dynamic .bg1{
+    width: 100%;
+    height: 1028px;
+    background: url("../img/liu1.jpg") no-repeat;
+    background-size: 100% 735px;
     position: fixed;
     top: 0;
     z-index: -1;
 }
-.q_a .problem{
-    width: 720px;
-    height: 600px;
-    padding: 0 40px;
-    margin: 0 auto;
+.dynamic .problem{
+    width: 1190px;
+    height: 900px;
+    margin:0 auto;
 }
-.q_a h3{
+.dynamic h3{
     display: block;
     width: 300px;
     height: 100px;
     font-size: 68px;
-    font-family: "trebuchet ms";
     font-weight: 400;
     margin: 0 auto 10px;
     text-align: center;
     color: #eee;
 }
-.question{
-    width: 710px;
-    height: auto;
-    margin-top: 30px;
-    position: relative;
+.dynamic_bottom{
+    width: 1190px;
+    height: 634px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.question a{
-    display: block;
-    width: 710px;
-    height: 30px;
-    color: #666;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ffffff;
+.dynamic_list{
+    width: 1180px;
+    height: 156px;
+    background: rgba(200,200,200,0.1);
+    transition: all 0.2s linear;
 }
-.open{
-    width: 27px;
-    height: 22px;
-    border-radius: 11px;
-    background: #ddd;
-    margin-top: 5px;
-    text-align: center;
-    line-height: 22px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #111;
-    float: left;
+.dynamic_list>.late{
+    width: 1000px;
+    height: 156px;
+    display: flex;
+    transition: all 0.2s linear;
 }
-.question h3{
-    width: 360px;
-    height: 30px;
-    font-size: 22px;
-    float: left;
-}
-.question .pull{
-    width: 800px;
-    border-radius: 20px;
-    font-size: 24px;
-    color: black;
-    padding-right: 40px;
-    background: rgba(230,230,230,0.9);
-    position: absolute;
-    top: 105px;
-    left: -48px;
-    display: none;
+.dynamic_list:hover .late{
+    transform: translateX(-50px);
 
 }
-@keyframes look {
-    from{
-        transform: rotateY(0deg) scale(0.5);
-    }
-    20%{
-        transform: rotateY(120deg) scale(0.7);
-    }
-    40%{
-        transform: rotateY(180deg) scale(0.9);
-    }
-    60%{
-        transform: rotateY(240deg) scale(1);
-    }
-    80%{
-        transform: rotateY(300deg) scale(1.1);
-    }
-    to{
-        transform: rotateY(360deg) scale(1.3);
-    }
+.dynamic_list:hover{
+    background: none;
+    color: #ffffff;
 }
-.question a:hover .pull{
+.dynamic_list:hover p{
+    color: #ffffff;
+}
+.dynamic_line{
+    width: 1180px;
+    height: 2px;
+    background: rgba(200,200,200,0.4)
+}
+.dynamic_line:last-child{
+    display: none;
+}
+.list_left{
+    width: 190px;
+    line-height: 156px;
+    margin-left: 200px;
+}
+.list_right a{
+
+    font-size: 16px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_right p{
+    width: 490px;
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    padding-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dynamic_list i{
+    height: 30px;
+    width: 20px;
+    font-size: 23px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 66px;
+    margin-left: 10px;
+    display: none;
+}
+.dynamic_list:hover i{
     display: block;
-    top: 42px;
-    animation: look 1.2s linear forwards;
 }
-.question p{
-    padding: 20px;
-    width: 800px;
-    letter-spacing: 1px;
+.problem .look{
+    color: #eee;
 }
+.problem .look:hover{
+    color: #888;
+}
+.problem .look:hover .enter{
+    border: 1px solid #888;
+}
+.problem .look:hover i{
+    color: #888;
+}
+.enter{
+    width: 138px;
+    height: 37px;
+    border: 1px solid #dddddd;
+    margin: 80px auto;
+}
+.enter i{
+    display: block;
+    font-size: 20px;
+    color: #ddd;
+    float: right;
+    margin-top: 7px;
+    margin-right: 16px;
+}
+
+
 
 /*班级设置开始*/
 .class{
-    width: 1346px;
+    width: 100%;
     height: 744px;
     background: url("../img/bg2.jpg") no-repeat;
-    background-size: 1346px 744px;
+    background-size: 100% 744px;
 }
 .bg2{
-    width: 1346px;
+    width: 100%;
     height: 744px;
     background: rgba(255,255,255,0.8);
     overflow: hidden;
@@ -484,7 +506,7 @@ header{
     font-weight: 400;
     margin: 60px auto 60px;
     text-align: center;
-    color: #eee;
+    color: #666;
 }
 .price{
     width: 1190px;
@@ -545,10 +567,10 @@ header{
 }
 /*联系开始*/
 .contact{
-    width: 1346px;
+    width: 100%;
     height: 964px;
     background: url("../img/bg2.jpg") no-repeat;
-    background-size: 1346px 964px;
+    background-size: 100% 964px;
 }
 .bg3{
     width: 100%;
@@ -583,37 +605,45 @@ header{
 }
 /*底部开始*/
 footer{
-    width: 1266px;
-    height: 300px;
+    width: 1269px;
+    height: 140px;
     padding: 0 40px;
-    background: #41626B;
+    background: #292929;
+    border-top: 1px solid #666;
     overflow: hidden;
 }
-.code{
-    width: 1266px;
-    height: 229px;
-    margin-top: 42px;
+footer>ul{
+    width: 200px;
+    height: 24px;
+    margin: 40px auto 20px;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
-.code_left{
-    width: 573px;
-    height: 209px;
-    border-right: 1px solid #eee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 60px;
+.logo_list{
+    width: 24px;
+    height: 24px;
 }
-.code_right{
-    width: 573px;
-    height: 209px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 60px;
+.logo_list:nth-child(1){
+    background: url("../img/social_icon_24x24.png") no-repeat 0 -48px;
+}
+.logo_list:nth-child(2){
+    background: url("../img/social_icon_24x24.png") no-repeat -96px -48px;
+}
+.logo_list:nth-child(3){
+    background: url("../img/social_icon_24x24.png") no-repeat -144px -48px;
+}
+.logo_list:nth-child(4){
+    background: url("../img/social_icon_24x24.png") no-repeat -192px -48px;
+}
+.logo_list:nth-child(5){
+    background: url("../img/social_icon_24x24.png") no-repeat -240px -48px;
+}
+footer p{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
 }
 /*留言*/
 .leaving{

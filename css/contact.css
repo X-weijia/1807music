@@ -1,12 +1,12 @@
 @import "base.css";
 header{
-    width: 1346px;
+    width: 100%;
     height: 750px;
     background: url("../img/banner.jpg");
-    background-size: 1346px 750px;
+    background-size: 100% 750px;
 }
 .bg{
-    width: 1346px;
+    width: 100%;
     height: 750px;
     background: rgba(70, 70, 70, 0.7);
     overflow: hidden;
@@ -111,15 +111,15 @@ a:hover .push{
 
 /*联系开始*/
 .contact{
-    width: 1346px;
+    width: 100%;
     height: 964px;
     background: url("../img/bg2.jpg") no-repeat;
-    background-size: 1346px 964px;
+    background-size: 100% 964px;
 }
 .bg3{
     width: 100%;
     height: 964px;
-    background: rgba(60,60,60,0.8);
+    background: rgba(80,80,80,0.8);
     overflow: hidden;
 }
 .bg3 h3{
@@ -149,35 +149,43 @@ a:hover .push{
 }
 /*底部开始*/
 footer{
-    width: 1266px;
-    height: 300px;
+    width: 1269px;
+    height: 140px;
     padding: 0 40px;
-    background: #41626B;
+    background: #292929;
+    border-top: 1px solid #666;
     overflow: hidden;
 }
-.code{
-    width: 1266px;
-    height: 229px;
-    margin-top: 42px;
+footer>ul{
+    width: 200px;
+    height: 24px;
+    margin: 40px auto 20px;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
-.code_left{
-    width: 573px;
-    height: 209px;
-    border-right: 1px solid #eee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 60px;
+.logo_list{
+    width: 24px;
+    height: 24px;
 }
-.code_right{
-    width: 573px;
-    height: 209px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 60px;
+.logo_list:nth-child(1){
+    background: url("../img/social_icon_24x24.png") no-repeat 0 -48px;
+}
+.logo_list:nth-child(2){
+    background: url("../img/social_icon_24x24.png") no-repeat -96px -48px;
+}
+.logo_list:nth-child(3){
+    background: url("../img/social_icon_24x24.png") no-repeat -144px -48px;
+}
+.logo_list:nth-child(4){
+    background: url("../img/social_icon_24x24.png") no-repeat -192px -48px;
+}
+.logo_list:nth-child(5){
+    background: url("../img/social_icon_24x24.png") no-repeat -240px -48px;
+}
+footer p{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
 }

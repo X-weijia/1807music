@@ -1,14 +1,14 @@
 @import "base.css";
 header{
     width: 100%;
-    height: 750px;
-    background: url("../img/bg1.jpg");
-    background-size: 100% 750px;
+    height: 200px;
+    background: url("../img/m1.png");
+    background-size: 100% 200px;
 }
 .bg{
     width: 100%;
-    height: 750px;
-    background: rgba(70, 70, 70, 0.7);
+    height: 200px;
+    background: rgba(10,10,10,0.8);
     overflow: hidden;
 }
 .logo{
@@ -55,45 +55,59 @@ header{
     font-weight: bold;
     color: #ffffff;
 }
-.popular{
-    width: 1190px;
-    height:335px;
-    margin: 260px auto;
-    display: flex;
+/*详情开始*/
+.content{
+    width: 1200px;
+    height: 780px;
+    background: #222;
+    padding-top: 40px;
+    margin: 30px auto;
 }
-.popular_left{
-    width: 595px;
-    height: 335px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.content>h3{
+    font-size: 26px;
+    color: #eeeeee;
+    text-align: center;
+    margin-bottom: 40px;
 }
-.popular_right{
-    width: 595px;
-    height: 335px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: rgba(180,180,180,0.5);
-}
-.popular_right h4{
-    font-size: 22px;
-    margin-left: 30px;
-    margin-top: 20px;
-    color: #333;
-}
-.popular_right p{
-    width: 520px;
+.content>h5{
+    width: 1000px;
     font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 30px;
-    line-height: 30px;
+    color: #9b9b9b;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
 }
-
+.content>p{
+    width: 1000px;
+    font-size: 16px;
+    color: #9b9b9b;
+    margin: 40px auto;
+    line-height: 28px;
+}
+.content>a{
+    display: block;
+    font-size: 16px;
+    width: 360px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: #9b9b9b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    transition: all 1s linear;
+}
+.content>a:hover{
+    background: #888;
+    color: #222;
+    transform: translate(5px 5px);
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.3);
+}
 /*底部开始*/
 footer{
-    width: 1269px;
+    width: 100%;
     height: 140px;
-    padding: 0 40px;
     background: #292929;
     border-top: 1px solid #666;
     overflow: hidden;
@@ -125,9 +139,11 @@ footer>ul{
     background: url("../img/social_icon_24x24.png") no-repeat -240px -48px;
 }
 footer p{
-    width: 100%;
+    width: 450px;
     height: 30px;
     text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
     font-size: 12px;
     color: #888;
 }
