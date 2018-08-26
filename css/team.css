@@ -56,89 +56,86 @@ header{
     color: #ffffff;
 }
 /*详情开始*/
-.content{
+.main{
     width: 1200px;
-    height: 780px;
-    background: #222;
-    padding-top: 40px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
+    height: 720px;
+    /*background: pink;*/
+    margin: 40px auto 0;
+    overflow: hidden;
+    position: relative;
 }
-.content_left{
-    width: 800px;
-    height: 780px;
-    background: #222;
+.main_top{
+    width: 500px;
+    height: 80px;
+    /*background: blue;*/
+    margin: 40px auto 0;
 }
-.content_left>h3{
-    font-size: 26px;
-    color: #eeeeee;
-    margin-bottom: 40px;
-    font-weight: 400;
+.teach{
+    width: 250px;
+    height: 80px;
+    text-align:center;
+    line-height: 80px;
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
 }
-.content_left>h5{
-    width: 800px;
-    font-size: 14px;
-    color: #9b9b9b;
-    font-weight: 400;
-    text-align: center;
+.tea{
+    background: #aaa;
+    font-weight: 600;
+    /*display: none;*/
+}
+.main_bottom{
+    width:1000px;
+    height: 569px;
     margin: 0 auto;
+    display: none;
+    /*position: absolute;*/
+    /*left: 5px;*/
+    /*z-index: 5;*/
 }
-.content_left>p{
-    width: 800px;
-    font-size: 16px;
-    color: #9b9b9b;
-    margin: 40px 0;
-    line-height: 28px;
+.main_bottom .content{
+    width: 300px;
+    height: 554px;
+    margin-right: 50px;
+    float: left;
 }
-.content_left>a{
+.main_bottom .content:hover h3{
+    color: #fff;
+}
+.main_bottom .content:last-child{
+    margin-right: 0;
+}
+.main_bottom .content img{
+    width: 200px;
+    height: 200px;
     display: block;
+    margin: 120px auto 10px;
+    transition: all .3s linear;
+}
+.main_bottom .content img:hover{
+    transform: scale(1.2);
+}
+.main_bottom .content h1{
+    color: #aaaaaa;
     font-size: 16px;
-    width: 360px;
-    height: 20px;
-    line-height: 20px;
-    margin-top: 10px;
-    color: #9b9b9b;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    transition: all 1s linear;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    text-align: center;
 }
-.content_left>a:hover{
-    background: #888;
-    color: #222;
-    transform: translate(5px 5px);
-    box-shadow: 0 0 8px 2px rgba(255,255,255,0.3);
+.main_bottom .content h2{
+    color: #aaaaaa;
+    font-size: 13px;
+    padding: 5px 0 10px 0;
+    text-align: center;
 }
-.content_right{
-    width: 300px;
-    height:600px;
+.main_bottom .content h3{
+    color: #777777;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: center;
 }
-.content_right>ul{
-    width: 300px;
-    height:600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.content_list{
-    width: 360px;
-    height: 60px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgb(76,76,76);
-}
-.content_list h3{
-    width: 248px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.content_right>ul a{
-    color: rgb(193,193,193);
-}
-.content_right>ul span{
-    color: rgb(193,193,193);
-}
+
 /*底部开始*/
 footer{
     width: 100%;

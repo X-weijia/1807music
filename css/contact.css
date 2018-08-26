@@ -83,10 +83,10 @@ header{
     margin-top: 20px;
     margin-left: 275px;
     font-weight: bold;
-    box-shadow: 0 0 10px 1px #fff;
+    box-shadow: 0 0 5px 1px #fff;
 }
 a:hover .push{
-    background: #222;
+    background: #666;
     color: #ffffff;
 }
 .out{

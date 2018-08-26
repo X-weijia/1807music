@@ -60,12 +60,24 @@ header{
     height:335px;
     margin: 260px auto;
     display: flex;
+    position: relative;
 }
 .popular_left{
     width: 595px;
     height: 335px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: absolute;
+    left: -680px;
+    animation: translate 1.6s linear forwards;
+}
+@keyframes translate {
+    from{
+        left: -680px;
+    }
+    to{
+        left: 0;
+    }
 }
 .popular_right{
     width: 595px;
@@ -73,6 +85,17 @@ header{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background: rgba(180,180,180,0.5);
+    position: absolute;
+    right: -680px;
+    animation: translate1 1.6s linear forwards;
+}
+@keyframes translate1 {
+    from{
+        right: -680px;
+    }
+    to{
+        right: 0;
+    }
 }
 .popular_right h4{
     font-size: 22px;
