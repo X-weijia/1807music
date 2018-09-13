@@ -1,30 +1,35 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_793780_oklrclg0uze.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_793780_e6a8elyzzbk.css">
+    <script src="js/animate.js"></script>
+    <script src="js/jQuery.js"></script>
     <title>Music Train</title>
 </head>
+
 <body>
-<!--头部开始-->
+    <!--头部开始-->
     <header>
         <div class="bg">
-            <div class="logo">
-                <img src="img/LOGO.png" alt="加载失败">
+            <div class="Nav">
+                <div class="logo">
+                    <img src="img/LOGO.png" alt="加载失败">
+                </div>
+                <ul class="nav">
+                    <li class="nav_list"><a href="index.html">首页</a></li>
+                    <li class="nav_list"><a href="#info">关于我们</a></li>
+                    <li class="nav_list"><a href="#type">课程介绍</a></li>
+                    <li class="nav_list"><a href="#team">师资团队</a></li>
+                    <li class="nav_list"><a href="#answer">资讯动态</a></li>
+                    <li class="nav_list"><a href="#class">班级设置</a></li>
+                    <li class="nav_list"><a href="contact.html" target="_blank">联系我们</a></li>
+                </ul>
             </div>
-            <ul class="nav">
-               <li class="nav_list"><a href="index.html">首页</a></li>
-               <li class="nav_list"><a href="#info">关于我们</a></li>
-               <li class="nav_list"><a href="#type">课程介绍</a></li>
-               <li class="nav_list"><a href="#team">师资团队</a></li>
-               <li class="nav_list"><a href="#answer">资讯动态</a></li>
-               <li class="nav_list"><a href="#class">班级设置</a></li>
-               <li class="nav_list"><a href="contact.html" target="_blank">联系我们</a></li>
-            </ul>
             <h3>THE ROAD TO MUSIC WITH YOU</h3>
             <h2>音乐之路伴您前行</h2>
             <a class="look" href="#info">
@@ -34,19 +39,36 @@
             </a>
         </div>
     </header>
-<!--头部结束-->
-<!--info开始-->
+    <!--头部结束-->
+    <!-- 侧导航 -->
+    <ul class="aside">
+        <li class="as_list">关于我们</li>
+        <li class="as_list">课程介绍</li>
+        <li class="as_list">师资团队</li>
+        <li class="as_list">资讯</li>
+        <li class="as_list">班级</li>
+        <li class="as_list">联系我们</li>
+    </ul>
+    <!--info开始-->
     <section class="info">
         <a href="" name="info"></a>
         <div class="info_box">
             <h2>ABOUT US</h2>
             <span class="ch">某某音乐艺术培训隶属于某某教育咨询有限公司，是经国家正规注册的专业音乐考前培训/儿童成人音乐教育机构，坐落于某某区某某路00号，教学团队核心人员均为在音乐培训行业从业多年的资深人士，全部来自国内各大音乐学院。机构主要提供成人及少儿音乐培训，音乐艺考生考前辅导，拥有成熟的成人/儿童/艺考生的声乐培训体系、器乐培训体系，旨在通过科学的教学方法，专业的课程设置，让每个学员在获得专业音乐技能、达到考学目的的同时具备良好的音乐素养和修养，具备感知音乐美好的能力。</span>
-            <span class="en">The xyz music art training belongs to the education consulting co., LTD., is registered by the national formal professional music pre-test training/adult children music education institution, is located in the district’s road no. 00, key personnel are in music teaching team training industry veteran of the industry for many years, all from the domestic each big school of music.Institutions mainly provide adult and children’s music training, music art examinee helping, have mature adults/children/instrumental art examinee’s vocal music training system, training system, through the scientific teaching methods, professional curriculum, let each students to obtain professional music skills, achieve the goal of KaoXue have good music quality and accomplishment, at the same time have the ability to perceive music better.</span>
+            <span class="en">The xyz music art training belongs to the education consulting co., LTD., is registered by
+                the national formal professional music pre-test training/adult children music education institution, is
+                located in the district’s road no. 00, key personnel are in music teaching team training industry
+                veteran of the industry for many years, all from the domestic each big school of music.Institutions
+                mainly provide adult and children’s music training, music art examinee helping, have mature
+                adults/children/instrumental art examinee’s vocal music training system, training system, through the
+                scientific teaching methods, professional curriculum, let each students to obtain professional music
+                skills, achieve the goal of KaoXue have good music quality and accomplishment, at the same time have
+                the ability to perceive music better.</span>
             <audio src="img/demo.mp3" controls></audio>
         </div>
     </section>
-<!--info结束-->
-<!--课程介绍开始-->
+    <!--info结束-->
+    <!--课程介绍开始-->
     <section class="type">
         <a href="" name="type"></a>
         <h3>MUSIC TYPE</h3>
@@ -54,7 +76,8 @@
             <li class="type_list">
                 <img src="img/type1.jpg" alt="加载失败">
                 <h4>钢琴音乐</h4>
-                <p>钢琴是一种键盘乐器，用键拉动琴槌以敲打琴弦。从十八世纪末以来，在欧洲及美国，钢琴一直是最主要的家庭键盘乐器。钢琴发源于欧洲，十八世纪初，意大利人克里斯多佛利（Bartolommeo Cristofori）发明的…</p>
+                <p>钢琴是一种键盘乐器，用键拉动琴槌以敲打琴弦。从十八世纪末以来，在欧洲及美国，钢琴一直是最主要的家庭键盘乐器。钢琴发源于欧洲，十八世纪初，意大利人克里斯多佛利（Bartolommeo
+                    Cristofori）发明的…</p>
                 <div class="frame">
                     <a href="detailed.html" target="_blank">
                         <div class="about">查看详情</div>
@@ -64,7 +87,8 @@
             <li class="type_list">
                 <img src="img/type2.jpg" alt="加载失败">
                 <h4>流行音乐</h4>
-                <p>流行音乐是根据英语Popular Music翻译过来的。按照汉语词语表面去理解，所谓流行音乐，是指那些结构短小、内容通俗、形式活泼、情感真挚，并被广大群众所喜爱，广泛传唱或欣赏， 流行一时的甚至流传后…</p>
+                <p>流行音乐是根据英语Popular Music翻译过来的。按照汉语词语表面去理解，所谓流行音乐，是指那些结构短小、内容通俗、形式活泼、情感真挚，并被广大群众所喜爱，广泛传唱或欣赏，
+                    流行一时的甚至流传后…</p>
                 <div class="frame">
                     <a href="detailed1.html" target="_blank">
                         <div class="about">查看详情</div>
@@ -83,8 +107,8 @@
             </li>
         </ul>
     </section>
-<!--课程介绍结束-->
-<!--团队介绍开始-->
+    <!--课程介绍结束-->
+    <!--团队介绍开始-->
     <section class="team">
         <a href="" name="team"></a>
         <h3>TEAM</h3>
@@ -123,8 +147,8 @@
         </a>
         <p>Music has no end</p>
     </section>
-<!--团队介绍结束-->
-<!--资讯开始-->
+    <!--团队介绍结束-->
+    <!--资讯开始-->
     <a href="" name="answer"></a>
     <section class="dynamic">
         <div class="bg1"></div>
@@ -152,7 +176,8 @@
                             <span style="font-size: 14px;color: #909090;font-family:Raleway;">2017</span>
                         </div>
                         <div class="list_right" style="margin-top: 52px;">
-                            <a style="display: block; width: 290px;" href="details.html" target="_blank">数字音乐教育委员会成立 普及音乐教育...</a>
+                            <a style="display: block; width: 290px;" href="details.html" target="_blank">数字音乐教育委员会成立
+                                普及音乐教育...</a>
                             <p class="fell">杰出的音乐表演大师、最迷人的小提琴家、中国的梅纽因（Menuhin）——这是世界音乐界权威人士对中国小提琴家盛中国的赞誉。</p>
                         </div>
                         <a href="details.html" target="_blank"><i class="iconfont icon-you"></i></a>
@@ -196,8 +221,8 @@
             </a>
         </div>
     </section>
-<!--资讯结束-->
-<!--班级开始-->
+    <!--资讯结束-->
+    <!--班级开始-->
     <section class="class">
         <a href="" name="class"></a>
         <div class="bg2">
@@ -290,55 +315,61 @@
             </ul>
         </div>
     </section>
-<!--班级结束-->
-<!--联系开始-->
+    <!--班级结束-->
+    <!--联系开始-->
     <section class="contact">
-    <div class="bg3">
-        <h3>CONTACT</h3>
-        <ul class="call">
-            <li class="call_type">
-                <div class="type_top1" style="float: left;">
-                    <i class="iconfont icon-weizhi" style="font-size:24px;color:#eee;line-height:39px;"></i>
-                    <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">地址：上海市松江区佘山林荫大道00号</span>
+        <div class="bg3">
+            <h3>CONTACT</h3>
+            <ul class="call">
+                <li class="call_type">
+                    <div class="type_top1" style="float: left;">
+                        <i class="iconfont icon-weizhi" style="font-size:24px;color:#eee;line-height:39px;"></i>
+                        <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">地址：上海市松江区佘山林荫大道00号</span>
+                    </div>
+                    <div class="type_top2" style="float: right;">
+                        <i class="iconfont icon-mail" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
+                        <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">邮箱：MusicTrain@163.com</span>
+                    </div>
+                </li>
+                <li class="call_type">
+                    <div class="type_top1" style="float: left;">
+                        <i class="iconfont icon-dianhua" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
+                        <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">电话：400-300-6000</span>
+                    </div>
+                    <div class="type_top2" style="float: right;">
+                        <i class="iconfont icon-diannao" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
+                        <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;margin-right:3px;">网址：www.MusicTrain.com</span>
+                    </div>
+                </li>
+                <div style="width: 810px;height: 400px;margin-top: 80px; border: 3px solid #bbb;">
+                    <img src="img/local.png" alt="加载失败">
                 </div>
-                <div class="type_top2" style="float: right;">
-                    <i class="iconfont icon-mail" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
-                    <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">邮箱：MusicTrain@163.com</span>
-                </div>
-            </li>
-            <li class="call_type">
-                <div class="type_top1" style="float: left;">
-                    <i class="iconfont icon-dianhua" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
-                    <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;">电话：400-300-6000</span>
-                </div>
-                <div class="type_top2" style="float: right;">
-                    <i class="iconfont icon-diannao" style="font-size:28px;color:#eee;line-height:39px;font-weight:bold;"></i>
-                    <span style="font-size:16px;color:#eee;line-height:39px;font-weight:bold;margin-right:3px;">网址：www.MusicTrain.com</span>
-                </div>
-            </li>
-            <div style="width: 810px;height: 400px;margin-top: 80px; border: 3px solid #bbb;">
-                <img src="img/local.png" alt="加载失败">
-            </div>
-        </ul>
-    </div>
-</section>
-<!--联系结束-->
-<!--底部开始-->
+            </ul>
+        </div>
+    </section>
+    <!--联系结束-->
+    <!--底部开始-->
     <footer>
-    <ul>
-        <li class="logo_list"></li>
-        <li class="logo_list"></li>
-        <li class="logo_list"></li>
-        <li class="logo_list"></li>
-        <li class="logo_list"></li>
-    </ul>
-    <p>版权所有&nbsp;©2017&nbsp;&nbsp;&nbsp;苏ICP备1230012300号</p>
-</footer>
-<!--留言-->
+        <ul>
+            <li class="logo_list"></li>
+            <li class="logo_list"></li>
+            <li class="logo_list"></li>
+            <li class="logo_list"></li>
+            <li class="logo_list"></li>
+        </ul>
+        <p>版权所有&nbsp;©2017&nbsp;&nbsp;&nbsp;苏ICP备1230012300号</p>
+    </footer>
+    <!-- 回顶部 -->
+    <div class="return">
+        <i class="iconfont icon-fanhuidingbu"></i>
+    </div>
+    <!--留言-->
     <a href="contact.html" style="color: #eee;">
         <div class="leaving">&nbsp;&nbsp;联系我们
             <i class="iconfont icon-xiaoxi" style="color: white;margin-left: 160px;font-size: 25px;line-height: 30px;"></i>
         </div>
     </a>
 </body>
+<script src="js/index.js"></script>
+
 </html>
